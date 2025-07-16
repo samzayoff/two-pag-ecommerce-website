@@ -42,7 +42,7 @@ function renderProducts() {
     card.innerHTML = `
       <div class="image" style="background-image: url('${product.image}'); height: 200px; background-size: cover; background-position: center;"></div>
       <center><h4><b>${product.name}</b></h4></center>
-      <h5>Price: $${product.price}</h5>
+      <h5>Price: Rs${product.price}</h5>
       <p>${product.description}</p>
       <center><button class="button" onclick="addToCart(${product.id})">Add to cart</button></center>
     `;
